@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.0">
+<head />
+<Scene>
+	<Viewpoint description="right" orientation="0.0 0.0 0.0  0.0" position="0.0 0.0 15.0" centerOfRotation="0 0 0" />
+
+	<NavigationInfo DEF="NAV" headlight="true" type="EXAMINE_RESTRICTED" />
+
+	<ProximitySensor DEF="PS" size="10000.0 10000.0 10000.0" />
+	<Transform DEF="menu">
+		<Transform translation="0.0 0.0 -0.2">
+			<Transform translation="0.0 -0.09 0.0">
+				<Transform translation="0.0 0.0 0.0">
+					<Shape>
+						<Appearance>
+							<Material transparency="0.5"/>
+						</Appearance>
+						<IndexedFaceSet colorIndex=" 0 0 0 0" coordIndex=" 0 1 2 3">
+							<Coordinate point="-0.2 0.0 0.0, 0.2 0.0 0.0, 0.2 0.04 0.0, -0.2 0.04 0.0, "/>
+							<Color color="0.4 0.4 0.4"/>
+						</IndexedFaceSet>
+					</Shape>
+				</Transform>
+				<Transform translation="-0.066 0.026 0">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="1 1 1"/>
+						</Appearance>
+						<Text DEF="text" length="0" string="">
+							<FontStyle size="0.014"/>
+						</Text>
+					</Shape>
+				</Transform>
+				<Transform translation="-0.104 0.015 0">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="1 1 1"/>
+						</Appearance>
+						<Text DEF="subtext" length="0" string="">
+							<FontStyle size="0.009"/>
+						</Text>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+	</Transform>
+
+	<Transform DEF="model">
+		<Transform DEF="axesHolder">
+			<Transform DEF="axes">
+				<Transform DEF="axisX">
+					<Shape>
+						<Appearance >
+							<Material diffuseColor="1.0 0.0 0.0" transparency="0.5" />
+						</Appearance>
+						<Box  size="10 0.01 0.01"/>
+					</Shape>
+					<Transform rotation="0 0 1  -1.5708" translation="5 0 0">
+						<Shape>
+							<Appearance >
+								<Material diffuseColor="1.0 0.0 0.0" transparency="0.5" />
+							</Appearance>
+							<Cone  bottomRadius="0.1" height="0.2" />
+						</Shape>
+					</Transform>
+				</Transform>
+				<Transform DEF="axisY">
+					<Shape>
+						<Appearance >
+							<Material diffuseColor="0.0 1.0 0.0" transparency="0.5" />
+						</Appearance>
+						<Box  size="0.01 10 0.01"/>
+					</Shape>
+					<Transform translation="0 5 0">
+						<Shape>
+							<Appearance >
+								<Material diffuseColor="0.0 1.0 0.0" transparency="0.5" />
+							</Appearance>
+							<Cone  bottomRadius="0.1" height="0.2" />
+						</Shape>
+					</Transform>
+				</Transform>
+				<Transform DEF="axisZ">
+					<Shape>
+						<Appearance >
+							<Material diffuseColor="0.0 0.0 1.0" transparency="0.5" />
+						</Appearance>
+						<Box  size="0.01 0.01 10"/>
+					</Shape>
+					<Transform rotation="1 0 0  1.5708" translation="0 0 5">
+						<Shape>
+							<Appearance >
+								<Material diffuseColor="0.0 0.0 1.0" transparency="0.5" />
+							</Appearance>
+							<Cone  bottomRadius="0.1" height="0.2" />
+						</Shape>
+					</Transform>
+				</Transform>
+			</Transform>
+		</Transform>
+
+	<Transform  DEF="Brain">
+		<Transform>
+			<PlaneSensor DEF="Pariet_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -20" minPosition="0 -21.9" />
+			<TouchSensor DEF="Pariet_TS" /> 
+
+			<Transform  DEF="Pariet"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Pariet.x3d" />
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Temp_R_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -21.9" minPosition="0 -23" />
+			<TouchSensor DEF="Temp_R_TS" /> 
+
+			<Transform  DEF="Temp_R"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Temp_R.x3d" />
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Pariet_L_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -20" minPosition="0 -21.9" />
+			<TouchSensor DEF="Pariet_L_TS" /> 
+
+			<Transform  DEF="Pariet_L"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Pariet_L.x3d" />			
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Temp_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -21.9" minPosition="0 -23" />
+			<TouchSensor DEF="Temp_TS" />
+
+			<Transform  DEF="Temp"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Temp.x3d" />			
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Cereb_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -21.9" minPosition="0 -23" />
+			<TouchSensor DEF="Cereb_TS" />
+
+			<Transform  DEF="Cereb"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Cereb.x3d" />			
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<TouchSensor DEF="Stem_TS" />
+
+			<Transform  DEF="Stem"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Stem.x3d" />
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Frontal_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -20" minPosition="0 -21.9" />
+			<TouchSensor DEF="Frontal_TS" />
+
+			<Transform  DEF="Frontal"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Frontal.x3d" />
+			</Transform>
+		</Transform>
+
+		<Transform>
+			<PlaneSensor DEF="Frontal_R_0_PS" autoOffset="true" offset="0.0 -21.9 -0.242" enabled="true" maxPosition="0 -20" minPosition="0 -21.9" />
+			<TouchSensor DEF="Frontal_R_0_TS" /> 
+
+			<Transform  DEF="Frontal_R_0"  translation="0.0 -21.9 -0.242" scale="2.4 2.4 2.4" rotation="1.0 0.0 0.0  -1.57">
+				<Inline url="Frontal_R_0.x3d" />
+			</Transform>
+		</Transform>
+	</Transform>
+
+	</Transform>
+
+	<ROUTE fromNode="PS" fromField="position_changed" toNode="menu" toField="set_translation" />
+	<ROUTE fromNode="PS" fromField="orientation_changed" toNode="menu" toField="set_rotation" />
+
+	<ROUTE fromNode="Pariet_TS" fromField="isOver" toNode="S" toField="displayName2" />
+	<ROUTE fromNode="Temp_R_TS" fromField="isOver" toNode="S" toField="displayName3" />
+	<ROUTE fromNode="Frontal_R_0_TS" fromField="isOver" toNode="S" toField="displayName4" />
+	<ROUTE fromNode="Frontal_TS" fromField="isOver" toNode="S" toField="displayName5" />
+	<ROUTE fromNode="Stem_TS" fromField="isOver" toNode="S" toField="displayName7" />
+	<ROUTE fromNode="Temp_TS" fromField="isOver" toNode="S" toField="displayName9" />
+	<ROUTE fromNode="Pariet_L_TS" fromField="isOver" toNode="S" toField="displayName10" />
+	<ROUTE fromNode="Cereb_TS" fromField="isOver" toNode="S" toField="displayName11" />
+
+	<ROUTE fromNode="Pariet_PS" fromField="translation_changed" toNode="S" toField="move2" />
+	<ROUTE fromNode="Temp_R_PS" fromField="translation_changed" toNode="S" toField="move3" />
+	<ROUTE fromNode="Frontal_R_0_PS" fromField="translation_changed" toNode="S" toField="move4" />
+	<ROUTE fromNode="Frontal_PS" fromField="translation_changed" toNode="S" toField="move5" />
+	<ROUTE fromNode="Temp_PS" fromField="translation_changed" toNode="S" toField="move9" />
+	<ROUTE fromNode="Pariet_L_PS" fromField="translation_changed" toNode="S" toField="move10" />
+	<ROUTE fromNode="Cereb_PS" fromField="translation_changed" toNode="S" toField="move11" />
+</Scene>
+
+</X3D>
