@@ -1,0 +1,51 @@
+--create table statement
+CREATE TABLE `sources` (
+  `sourceid` int(10) NOT NULL AUTO_INCREMENT,
+  `modelid` int(10) NOT NULL,
+  `author` varchar(100) DEFAULT NULL,
+  `source_adr` varchar(100) DEFAULT NULL,
+  `date` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`sourceid`),
+  CONSTRAINT `FK_ModelsSources` FOREIGN KEY (`modelid`) REFERENCES `models`(`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--dump table data
+--changes to id numbers on this page must be applied to models_table.sql as well
+INSERT INTO `sources` (`modelid`,`author`,`source_adr`,`date`) VALUES
+ (0,"N/A","N/A","N/A"),
+ (1,"N/A","N/A","N/A"),
+ (2,"TODO (NIST team)","https://www.web3d.org/x3d/content/examples/Basic/Medical/BodySkinIndexedFaceSetNISTIndex.html","20 October 2019"),
+ (3,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesChestIndex.html","20 October 2019"),
+ (4,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftFemurIndex.html","20 October 2019"),
+ (5,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightFemurIndex.html","20 October 2019"),
+ (6,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftFootIndex.html","20 October 2019"),
+ (7,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightFootIndex.html","20 October 2019"),
+ (8,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesGirdleIndex.html","20 October 2019"),
+ (9,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftHandIndex.html","20 October 2019"),
+ (10,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightHandIndex.html","20 October 2019"),
+ (11,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesHeadIndex.html","20 October 2019"),
+ (12,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftHumerusIndex.html","20 October 2019"),
+ (13,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightHumerusIndex.html","20 October 2019"),
+ (14,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftRadiusUlnaIndex.html","20 October 2019"),
+ (15,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightRadiusUlnaIndex.html","20 October 2019"),
+ (16,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesAllSkeletonIndex.html","20 October 2019"),
+ (17,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesTeethTopIndex.html","20 October 2019"),
+ (18,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesTeethBottomIndex.html","20 October 2019"),
+ (19,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesLeftTibiaFibulaIndex.html","20 October 2019"),
+ (20,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesRightTibiaFibulaIndex.html","20 October 2019"),
+ (21,"Marvin","https://3dprint.nih.gov/discover/3DPX-011701","Mon, 2019-08-12 01:01"),
+ (22,"chris@printhuman.org","https://3dprint.nih.gov/discover/3dpx-000906","Fri, 2014-12-26 00:03"),
+ (23,"Marvin","https://3dprint.nih.gov/discover/3DPX-011701","Mon, 2019-08-12 01:01"),
+ (24,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesMandibleIndex.html","20 October 2019"),
+ (25,"Damon Hernandez, Joe Williams","https://www.web3d.org/x3d/content/examples/Basic/Medical/BonesSpineIndex.html","20 October 2019"),
+ (26,"nevitdilmen","https://3dprint.nih.gov/discover/3DPX-008678","Sat, 2018-02-17 15:30"),
+ (27,"sanjy009","https://3dprint.nih.gov/discover/3dpx-013270","Sun, 2020-03-29 05:45"),
+ (28,"kserralde","https://3dprint.nih.gov/discover/3DPX-008908","Wed, 2018-03-21 09:05"),
+ (29,"Matthew Bramlet","https://3dprint.nih.gov/discover/3dpx-007808","Wed, 2017-08-02 17:58"),
+ (30,"kserralde","https://3dprint.nih.gov/discover/3DPX-009506","Tue, 2018-08-07 12:56"),
+ (31,"Matthew Bramlet","https://3dprint.nih.gov/discover/3DPX-011473","Fri, 2019-07-12 15:39"),
+ (32,"kbrowne","https://3dprint.nih.gov/discover/3dpx-013408","Wed, 2020-04-01 15:07"),
+ (33,"Andrew Wood, Nicholas Polys: Virginia Tech","https://www.web3d.org/x3d/content/examples/Basic/VolumeRendering/BasicAbdomenIndex.html","29 March 2020"),
+ (34,"Andrew Wood, Nicholas Polys: Virginia Tech","https://www.web3d.org/x3d/content/examples/Basic/VolumeRendering/BasicBodyIndex.html","29 March 2020"),
+ (35,"Andrew Wood, Nicholas Polys: Virginia Tech","https://www.web3d.org/x3d/content/examples/Basic/VolumeRendering/BasicBrainIndex.html","29 March 2020"),
+ (36,"Andrew Wood, Nicholas Polys: Virginia Tech","https://www.web3d.org/x3d/content/examples/Basic/VolumeRendering/BasicSkullIndex.html","29 March 2020");

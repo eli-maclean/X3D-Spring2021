@@ -1,0 +1,159 @@
+nav>ul {
+height: 50px;
+line-height: 50px;
+text-align: center;
+background-color: #333;
+}
+
+nav>ul>li {
+display: inline-block;
+position: relative;
+background-color: #333;
+border-radius: 5px;
+padding: 0 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+display: block;
+color: white;
+}
+
+nav ul li a:hover {
+color: 88ACFF;
+}
+
+.center {
+	margin: auto;
+	padding: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+	width: 1300px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background: #222;
+	border-radius: 10px 10px 10px 10px;
+	position: relative;
+}
+
+.centerbrain {
+	margin: auto;
+	padding: 10px;
+	padding-bottom: 100px;
+	border: 1px solid black;
+	overflow: hidden;
+	width: 1300px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background: #222;
+	border-radius: 10px 10px 10px 10px;
+	position: relative;
+}
+
+
+.maxwrap {
+	float: left;
+	margin: auto;
+	width: 500px;
+	height: 500px;
+}
+
+.slider {
+	margin-right: 20px;
+	width: 75%;
+}
+
+.sidebar {
+	float: right;
+	color: #DDD;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 300px;
+	position: static;
+	display: block;
+}
+.topbar {
+	float: left;
+	color: #DDD;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 300px;
+	position: static;
+	display: block;
+}
+
+.percentage {
+	position: absolute;
+	padding: 2px;
+	margin-top: 4px;
+}
+
+.ctGuts {
+	position:relative;
+	background-color: #333;
+	padding: 5px;
+}
+
+.x3d {
+    float: left;
+	overflow: hidden;
+	border: 1px solid black;
+	padding-top: 25 px;
+	display: block;
+	position: absolute;
+	top: 50%; left: 43%;
+	transform: translate(-57%,-50%);
+}
+
+.x3dbrain {
+    float: left;
+	overflow: hidden;
+	border: 1px solid black;
+	padding-top: 25 px;
+	display: block;
+	position: absolute;
+	top: 57%; left: 43%;
+	transform: translate(-57%,-50%);
+}
+
+#skullScene {
+	position: relative;
+	border: 1px solid white;
+	width: 900px;
+	height: 700px;
+}
+
+h3 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin-bottom: 1px;
+	margin-top: 8px;
+}
+
+div {
+	border: 0px solid green;
+}
+
+nav>ul {
+height: 50px;
+line-height: 50px;
+text-align: center;
+background-color: #333;
+}
+
+nav>ul>li {
+display: inline-block;
+position: relative;
+background-color: #333;
+border-radius: 5px;
+padding: 0 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+display: block;
+color: white;
+}
+
+nav ul li a:hover {
+color: 88ACFF;
+}

@@ -1,0 +1,4 @@
+This folder should contain only the CSS folder, the x3d folder, and all .html files which display a 3d model
+Please follow the following naming convention for .html file names:
+{body part}_{orientation(left/right/upper/lower/etc)}_{any additional descriptors}
+NOTE: each word is sepparated by an underscore ( _ ), and all words should be lower case 
