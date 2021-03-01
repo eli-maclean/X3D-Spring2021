@@ -1,9 +1,9 @@
 <?php
 class DBController {
 	private $host = "localhost";
-	private $user = "em07614";
-	private $password = "wyig4LiN";
-	private $database = "em07614";
+	private $user = "bp11471";
+	private $password = "R8zeueCM";
+	private $database = "bp11471";
 	private $conn;
 	
 	function __construct() {
